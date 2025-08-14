@@ -55,3 +55,10 @@
 <p align="center">
   💙 If you like my work, consider giving a ⭐ to my repositories!
 </p>
+
+---
+
+### 🐍 Contribution Snake
+<p align="center">
+  <img src="https://github.com/sujan29k/sujan29k/blob/output/snake.svg" alt="Snake animation" />
+</p>
