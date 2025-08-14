@@ -2,8 +2,8 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight
-  workflow_dispatch: # Allows manual trigger
+    - cron: "0 0 * * *"  # Runs daily at midnight
+  workflow_dispatch:     # Allows manual trigger
 
 jobs:
   build:
@@ -14,11 +14,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Generate Snake
+      - name: Generate Snake (Dark Theme)
         uses: Platane/snk@v3
         with:
           github_user_name: sujan29k
-          outputs: dist/snake.svg
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark
 
       - name: Push to GitHub
         uses: crazy-max/ghaction-github-pages@v3.1.0
